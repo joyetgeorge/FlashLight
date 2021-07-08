@@ -12,10 +12,10 @@ FlashLight is an Open-Source minimal flashlight app that does not require any ad
 
 #### Version History
 
-* 1.0
+* v1.0
     * Various bug fixes and optimizations
     * Initial relese
-* 1.1
+* v1.1
     * Removed Button ripple effect on some devices
     * Various bug fixes and optimizations
 
