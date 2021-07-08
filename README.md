@@ -1,14 +1,27 @@
-A simple flashlight app for Android
+# FlashLight
 
-I wrote this because a wanted a simple app to use the camera LED on my phone as a flashlight, without a lot of bells 
-and whistles, and without needing Internet access, display ads, etc.
+FlashLight is an Open-Source flashlight app that does not require any addithional permissions. To turn the camera flash on and off, the application makes use of the Flash mode of the device's camera. This will not work on a device that does not support any camera flash, Android version Lolipop is required (API version 22).
 
-So there it is.  Just like a real flashlight, the entire UI consists of a single button.  Pressing it will turn the 
-light on and off.
+#### Downloads
 
-It doesn't have any other features, or attempt to work with obscure devices or old android versions.  So far it's only
-been tested on a Samsung Droid Charge running Android 2.3.6, but it should work on most common 
-devices.
+* Latest apk : [Flash.Light.v1.1.apk](https://github.com/joyetgeorge/FlashLight/releases/download/v1.1/Flash.Light.v1.1.apk)
+* Source Code(zip) : [FlashLight.zip](https://github.com/joyetgeorge/FlashLight/archive/refs/tags/v1.1.zip)
+
+* Source Code(tar.gz) : [FlashLight.zip](https://github.com/joyetgeorge/FlashLight/archive/refs/tags/v1.1.tar.gz)
 
 
-icon from http://www.iconarchive.com/show/mixed-icons-by-simiographics/Flashlight-icon.html
+#### Version History
+
+* 1.0
+    * Various bug fixes and optimizations
+    * Initial relese
+* 1.1
+    * Removed Button ripple effect on some devices
+    * Various bug fixes and optimizations
+
+####Images
+
+| image 1      | image 2      | image 3      | image 4      |
+|------------|-------------|-------------|-------------|
+| <img src="https://raw.githubusercontent.com/joyetgeorge/FlashLight/master/Screenshot01.png" width="250"> | <img src="https://raw.githubusercontent.com/joyetgeorge/FlashLight/master/Screenshot02.png" width="250"> | <img src="https://raw.githubusercontent.com/joyetgeorge/FlashLight/master/Screenshot03.png" width="250"> |  <img src="https://raw.githubusercontent.com/joyetgeorge/FlashLight/master/Screenshot04.png" width="250"> |
+
