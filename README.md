@@ -19,7 +19,7 @@ FlashLight is an Open-Source minimal flashlight app that does not require any ad
     * Removed Button ripple effect on some devices
     * Various bug fixes and optimizations
 
-####Images
+#### Images
 
 | image 1      | image 2      | image 3      |
 |-------------|-------------|-------------|
