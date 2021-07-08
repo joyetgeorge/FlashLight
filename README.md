@@ -21,7 +21,7 @@ FlashLight is an Open-Source flashlight app that does not require any addithiona
 
 ####Images
 
-| image 1      | image 2      | image 3      | image 4      |
-|------------|-------------|-------------|-------------|
-| <img src="https://raw.githubusercontent.com/joyetgeorge/FlashLight/master/Screenshot01.png" width="250"> | <img src="https://raw.githubusercontent.com/joyetgeorge/FlashLight/master/Screenshot02.png" width="250"> | <img src="https://raw.githubusercontent.com/joyetgeorge/FlashLight/master/Screenshot03.png" width="250"> |  <img src="https://raw.githubusercontent.com/joyetgeorge/FlashLight/master/Screenshot04.png" width="250"> |
+| image 1      | image 2      | image 3      |
+|-------------|-------------|-------------|
+ <img src="https://raw.githubusercontent.com/joyetgeorge/FlashLight/master/Screenshot02.png" width="250"> | <img src="https://raw.githubusercontent.com/joyetgeorge/FlashLight/master/Screenshot03.png" width="250"> |  <img src="https://raw.githubusercontent.com/joyetgeorge/FlashLight/master/Screenshot04.png" width="250"> |
 
