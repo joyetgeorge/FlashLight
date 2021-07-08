@@ -10,13 +10,14 @@ import android.hardware.camera2.CameraManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private ImageButton toggleButton;
-    private ImageButton infoButton;
     boolean hasFlash = false;
     boolean flashOn = false;
 
@@ -26,8 +27,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
+
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         toggleButton = (ImageButton) findViewById(R.id.toggleButton);
-        infoButton = (ImageButton) findViewById(R.id.imageButton2);
 
         hasFlash = getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH);
 
@@ -35,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public void onClick(View v) {
-                if (hasFlash){
+                if (hasFlash) {
                     if (flashOn) {
                         flashOn = false;
                         toggleButton.setImageResource(R.drawable.flash_off);
@@ -44,8 +51,7 @@ public class MainActivity extends AppCompatActivity {
                         } catch (CameraAccessException e) {
                             e.printStackTrace();
                         }
-                    }
-                    else {
+                    } else {
                         flashOn = true;
                         toggleButton.setImageResource(R.drawable.flash_on);
                         try {
@@ -54,21 +60,20 @@ public class MainActivity extends AppCompatActivity {
                             e.printStackTrace();
                         }
                     }
-                }
-                else {
+                } else {
                     Toast.makeText(MainActivity.this, "No flash Light found", Toast.LENGTH_SHORT).show();
                 }
             }
         });
 
-        infoButton.setOnClickListener(new View.OnClickListener() {
+        toggleButton.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onLongClick(View v) {
                 Toast.makeText(MainActivity.this, "Developed by @joyetgeorge", Toast.LENGTH_SHORT).show();
+                return false;
             }
         });
     }
-
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void flashLightOn() throws CameraAccessException {
