@@ -1,6 +1,6 @@
 # FlashLight
 
-FlashLight is an Open-Source minimal flashlight app that does not require any additional permissions. To turn the camera flash on and off, the application makes use of the Flash mode of the device's camera. This will not work on a device that does not support any camera flash, Android version Lollipop is required (API version 22).
+FlashLight is an Open-Source minimal flashlight app that does not require any additional permissions. To turn the camera flash on and off, the application makes use of the Flash mode of the device's camera. This will not work on a device that does not support any camera flash, Android Lollipop is required (API version 22).
 
 #### Downloads
 
