@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FlashLight</string>
+    <string name="normalMode"><font fgcolor = '#FF4CD964'>Normal</font></string>
+    <string name="blinkMode"><font fgcolor = '#FFA020F0'>Blink</font></string>
 </resources>
